@@ -1,7 +1,11 @@
 package edu.eci.arsw.springdemo;
 
-public class EnglishSpellChecker implements SpellChecker {
+//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
+public class EnglishSpellChecker implements SpellChecker {
+            
 	@Override
 	public String checkSpell(String text) {		
 		return "Checked with english checker:"+text;
